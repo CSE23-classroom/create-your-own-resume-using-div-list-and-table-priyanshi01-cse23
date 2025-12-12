@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+         #logo , #header, #textarea, #box ,  .footer{
+             border: 2px solid black; 
+            text-align: center;
+            padding: 20px;
+             display: flex; 
+            border-radius: 5px;
+            background-color: lightgrey;
+            gap: 20px;
+        
+            
+         }
+
+             #box{
+                display: grid;
+                justify-content: space-between;
+                 grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                 min-height: 300px;
+            } 
+
+            .boxes{
+                 border: 2px solid black; 
+                min-height: auto;
+                text-align: center;
+                width:  100% ;
+                padding: 20px;
+                border-radius: 5px;
+                display: grid;
+                grid-template-columns: auto;
+                background-color: grey;
+                justify-content: space-between;
+                grid-template-columns: auto;
+            }
+
+
+
+    </style>
+</head>
+<body>
+    <div id="logo"><h2>Logo</h2></div>
+
+    <header id = "header"><h2>Header</h2></header>
+
+    <article  id  = "textarea"><h2>TextArea</h2></article>
+       <div id="box"> 
+        <div class="boxes"><h2>Box 1</h2></div>
+        <div class="boxes"><h2>Box 2</h2></div>
+        <div class="boxes"><h2>Box 3</h2></div>
+       </div>
+       <footer class="footer"><h2>Footer</h2></footer>
+</body>
+</html>
